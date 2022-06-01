@@ -8,11 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--BossScreen-->
+        <!--BossViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" userLabel="BossScreen" customClass="ViewController" customModule="Arc_elik_ios_week2_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BossViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="BossViewController" customClass="BossViewController" customModule="Arc_elik_ios_week2_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +51,7 @@
                                     <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="calculateBMIPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Fm-JR-A2L"/>
                                     <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0n-rM-Jfb"/>
                                 </connections>
                             </button>
@@ -76,17 +76,18 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="heightTextField" destination="Xnz-Vw-M61" id="O7t-qF-cy4"/>
-                        <outlet property="weightTextField" destination="0D5-qm-XZl" id="PAO-oL-ozn"/>
+                        <outlet property="heightTextField" destination="Xnz-Vw-M61" id="BNc-qW-ctV"/>
+                        <outlet property="weightTextField" destination="0D5-qm-XZl" id="f4S-uc-E2c"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
-        <!--InternScreen-->
+        <!--InternViewController-->
         <scene sceneID="HNS-DK-aEI">
             <objects>
-                <viewController id="uUU-gb-xKi" userLabel="InternScreen" customClass="InternViewController" customModule="Arc_elik_ios_week2_homework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InternViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uUU-gb-xKi" userLabel="InternViewController" customClass="InternViewController" customModule="Arc_elik_ios_week2_homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBm-CN-X40">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
